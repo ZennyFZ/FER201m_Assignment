@@ -18,6 +18,7 @@
 * Remove Favorite Anime
 * Switch episode
 * Switch anime server
+<br>
 Note: Lazy to add
 
 ### Screenshot
