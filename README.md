@@ -5,7 +5,7 @@
 * View Anime Detail
 * Watch Anime
 * Login
-* Admin panel
+* Admin Panel
 * Add Anime
 * Delete Anime
 * Update Anime
@@ -16,8 +16,8 @@
 * User Panel
 * Add Favorite Anime
 * Remove Favorite Anime
-* Switch episode
-* Switch anime server
+* Switch Episode
+* Switch Anime Server
 <br>
 Note: Lazy to add
 
