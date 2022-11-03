@@ -1,0 +1,61 @@
+.App {
+  text-align: center;
+}
+.Navigation{
+  background-color: #282c34;
+  color: white;
+}
+
+.bottom-line{
+  border-bottom: 1px solid #0761e7;
+}
+
+.bottom-line2{
+  width: 20%;
+  background: #0761e7;
+  height: 3px;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+
+.Footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-top: 1px solid #0761e7;
+}
+
+.opa{
+  opacity: 0.6;
+}
+
+.card-title{
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #44e2ff;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.sbox{
+  width: 60%;
+  height: 500px;
+  float: left;
+  margin-top: 50px;
+  background: #0F0F0F;
+  border: 1px solid #171717;
+  padding: 2%;
+  background-image: url("https://ani4u.org/wp-content/uploads/2022/07/details-et-date-de-sortie-de-engage-kiss-1650978484-2.jpg");
+  background-size: 250px;
+  background-position: left;
+  background-repeat: no-repeat;
+}
