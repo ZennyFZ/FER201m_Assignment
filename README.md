@@ -12,7 +12,7 @@
 * Search Anime
 
 
-## Unfinished feature
+## Unfinished Feature
 * User Panel
 * Add Favorite Anime
 * Remove Favorite Anime
