@@ -18,6 +18,7 @@
 * Remove Favorite Anime
 * Switch Episode
 * Switch Anime Server
+* Mobile Responsive
 <br>
 Note: Lazy to add
 
