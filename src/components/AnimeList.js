@@ -29,10 +29,10 @@ export default function AnimeList(animes) {
           ))}
         </Row>
       </Container>
-      <Stack spacing={2}>
-      <Pagination count={10} size="small" />
-      <Pagination count={10} />
-    </Stack>
+      <Stack>
+        <Pagination count={10} color="primary" />
+        
+      </Stack>
     </div>
   );
 }

@@ -8,6 +8,9 @@ import AnimeWatch from './components/AnimeWatch';
 import Footer from './components/Footer';
 import { Routes, Route } from 'react-router-dom';
 import Protected from './components/Protected';
+import Dashboard from './components/Dashboard'
+import Add from './components/Add'
+import Edit from './components/Edit';
 
 function App() {
   return (
@@ -18,9 +21,9 @@ function App() {
         <Route path="/login" element={<Login/>}/>
         <Route path="/Anime/:id" element={<AnimeDetail/>}/>
         <Route path="/Watch/:id" element={<AnimeWatch/>}/>
-        {/* <Route path='/dashboard' element={<Protected><Dashboard/></Protected>}></Route>
+        <Route path='/dashboard' element={<Protected><Dashboard/></Protected>}></Route>
         <Route path='/add' element={<Protected><Add/></Protected>}></Route>
-        <Route path='/edit' element={<Protected><Edit/></Protected>}></Route> */}
+        <Route path=':id/edit' element={<Protected><Edit/></Protected>}></Route>
       </Routes>
       <Footer/>
     </div>
