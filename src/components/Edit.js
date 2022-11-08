@@ -2,15 +2,35 @@ import { Link } from 'react-router-dom';
 import {Button} from 'react-materialize';
 import {Card, CardContent, CardHeader} from '@mui/material';
 import { useParams } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import callApi from '../ultis/apiCaller';
+import { useEffect } from 'react';
 
 export default function Edit() {
     const userName = useParams();
+    const navigate = useNavigate();
 
-    async function addData(values){
-        await callApi("films/"+userName.id, "PUT", {
+    async function getData(){
+        await callApi(`films/${userName.id}`, "GET", null).then(res => {
+            formik.setFieldValue("name", res.data.name);
+            formik.setFieldValue("image", res.data.image);
+            formik.setFieldValue("status", res.data.status);
+            formik.setFieldValue("episode", res.data.episode);
+            formik.setFieldValue("studio", res.data.studio);
+            formik.setFieldValue("description", res.data.description);
+            formik.setFieldValue("background", res.data.background);
+            formik.setFieldValue("link", res.data.link);
+        })
+    }
+
+    useEffect(()=>{
+        getData();
+    },[])
+
+    async function editData(values){
+        await callApi(`films/${userName.id}`, "PUT", {
             name: values.name,
             image: values.image,
             status: values.status,
@@ -45,8 +65,8 @@ export default function Edit() {
             background: Yup.string().required("Required").typeError("Field must not be empty"),
         }),
         onSubmit: (values) => {
-            addData(values);
-            formik.resetForm();
+            editData(values);
+            navigate('/dashboard');
         },
     });
 

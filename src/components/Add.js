@@ -4,8 +4,10 @@ import {Card, CardContent, CardHeader} from '@mui/material';
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import callApi from '../ultis/apiCaller';
+import { useNavigate } from 'react-router-dom';
 
 export default function Add() {
+    const navigate = useNavigate();
 
     async function addData(values){
         await callApi("films", "POST", {
@@ -45,6 +47,7 @@ export default function Add() {
         onSubmit: (values) => {
             addData(values);
             formik.resetForm();
+            navigate('/dashboard');
         },
     });
 

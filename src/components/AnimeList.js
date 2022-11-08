@@ -1,7 +1,5 @@
 import { Button, Row, Col, Container } from "react-materialize";
 import { Link } from "react-router-dom";
-import Pagination from '@mui/material/Pagination';
-import Stack from '@mui/material/Stack';
 export default function AnimeList(animes) {
     console.log(animes);
   return (
@@ -29,10 +27,6 @@ export default function AnimeList(animes) {
           ))}
         </Row>
       </Container>
-      <Stack>
-        <Pagination count={10} color="primary" />
-        
-      </Stack>
     </div>
   );
 }
