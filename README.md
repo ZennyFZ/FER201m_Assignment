@@ -9,11 +9,11 @@
 * Add Anime
 * Delete Anime
 * Update Anime
-* Search Anime
 
 
 ## Unfinished Feature
 * User Panel
+* Search Anime
 * Add Favorite Anime
 * Remove Favorite Anime
 * Switch Episode
