@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
+import * as Config from "../ultis/config";
 import axios from "axios";
 export default function AnimeDetail() {
     const userName = useParams();
@@ -7,7 +8,7 @@ export default function AnimeDetail() {
     console.log(userName);
 
     function getData() {
-        axios.get("https://635e56a1ed25a0b5fe4380b5.mockapi.io/api/films/" + userName.id)
+        axios.get(`${Config.API_URL}/AnimeZ/` + userName.id)
             .then(response => response.data)
             .then((data) => {
                 setAnimeList(data)

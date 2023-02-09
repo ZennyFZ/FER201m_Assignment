@@ -8,7 +8,7 @@ export default function Dashboard() {
     const [animeList, setAnimeList] = useState([])
 
     async function getData() {
-        await callApi("films", "GET", null).then(res => {
+        await callApi("AnimeZ", "GET", null).then(res => {
             setAnimeList(res.data)
         });
         console.log(animeList);
@@ -19,7 +19,7 @@ export default function Dashboard() {
     },[])
 
     function deleteData(id) {
-        callApi("films/" + id, "DELETE", null).then(res => {
+        callApi("AnimeZ/" + id, "DELETE", null).then(res => {
             console.log(res);
         });
     }

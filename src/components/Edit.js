@@ -13,7 +13,7 @@ export default function Edit() {
     const navigate = useNavigate();
 
     async function getData(){
-        await callApi(`films/${userName.id}`, "GET", null).then(res => {
+        await callApi(`AnimeZ/${userName.id}`, "GET", null).then(res => {
             formik.setFieldValue("name", res.data.name);
             formik.setFieldValue("image", res.data.image);
             formik.setFieldValue("status", res.data.status);
@@ -30,7 +30,7 @@ export default function Edit() {
     },[])
 
     async function editData(values){
-        await callApi(`films/${userName.id}`, "PUT", {
+        await callApi(`AnimeZ/${userName.id}`, "PUT", {
             name: values.name,
             image: values.image,
             status: values.status,

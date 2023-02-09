@@ -10,7 +10,7 @@ export default function Add() {
     const navigate = useNavigate();
 
     async function addData(values){
-        await callApi("films", "POST", {
+        await callApi("AnimeZ", "POST", {
             name: values.name,
             image: values.image,
             status: values.status,
