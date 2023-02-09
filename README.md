@@ -14,6 +14,7 @@
 ## Unfinished Feature
 * User Panel
 * Search Anime
+* Watch Anime
 * Add Favorite Anime
 * Remove Favorite Anime
 * Switch Episode
