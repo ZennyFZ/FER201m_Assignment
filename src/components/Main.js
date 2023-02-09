@@ -14,7 +14,7 @@ class Main extends Component {
     }
 
     componentDidMount(){
-        callApi("films", "GET", null).then(res => {
+        callApi("AnimeZ", "GET", null).then(res => {
             this.setState({
                 films: res.data
             });
